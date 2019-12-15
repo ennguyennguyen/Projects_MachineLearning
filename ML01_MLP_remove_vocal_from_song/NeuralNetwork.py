@@ -71,10 +71,15 @@ NN = NeuralNetwork()
 for i in range(1000): #train NN 1000 times
     NN.train(x, y)
 
-print("Input: " + str(x))
-print("Actual Output: " + str(y))
+print("Input: ")
+print(str(x))
+print("\n")
+print("Actual Output: ")
+print(str(y))
+print("\n")
 print("Loss: " + str(np.mean(np.square(y - NN.forwardPass(x)))))
 print("\n")
-print("Predicted output: " + str(NN.forwardPass(x)))
+print("Predicted output: ")
+print(str(NN.forwardPass(x)))
 
 # %%
